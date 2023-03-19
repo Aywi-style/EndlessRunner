@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 921fb709fe845d74cb71341cf8e53111, type: 3}
+  m_Name: LevelConfig
+  m_EditorClassIdentifier: 
+  <MaxBackgroundObjectsCount>k__BackingField: 3
+  <TimeToChangePart>k__BackingField: 10
+  <LevelParts>k__BackingField:
+  - <Name>k__BackingField: Troposphere
+    <EndHeight>k__BackingField: 100
+    <LevelPartConfig>k__BackingField: {fileID: 11400000, guid: 9afd5aed50fede24bb4755d21b86f756, type: 2}
+  - <Name>k__BackingField: Stratosphere
+    <EndHeight>k__BackingField: 200
+    <LevelPartConfig>k__BackingField: {fileID: 11400000, guid: 5864c65d1dc142a45a8351ba90f9378c, type: 2}
+  - <Name>k__BackingField: Mesosphere
+    <EndHeight>k__BackingField: 300
+    <LevelPartConfig>k__BackingField: {fileID: 11400000, guid: f2fc82ea08c1eca4a9225740a36f5bed, type: 2}
+  - <Name>k__BackingField: Thermosphere
+    <EndHeight>k__BackingField: 400
+    <LevelPartConfig>k__BackingField: {fileID: 11400000, guid: fa9e65ce87a19944baafa92766b81f8c, type: 2}
+  - <Name>k__BackingField: Exosphere
+    <EndHeight>k__BackingField: 500
+    <LevelPartConfig>k__BackingField: {fileID: 11400000, guid: 881a3881b54b1eb4c8f4180d36029ca2, type: 2}
+  - <Name>k__BackingField: The Edge of Outer Space
+    <EndHeight>k__BackingField: 600
+    <LevelPartConfig>k__BackingField: {fileID: 11400000, guid: 5c80b6a59fd9c0241a2acdd0e06fb3f0, type: 2}

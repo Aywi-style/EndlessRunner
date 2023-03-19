@@ -1,0 +1,45 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using Leopotam.EcsLite;
+using Leopotam.EcsLite.Di;
+
+namespace Client
+{
+    sealed class #SCRIPTNAME# : IEcsRunSystem
+    {        
+        readonly EcsFilterInject<Inc<T>> _eventFilter = default;
+        
+        readonly EcsPoolInject<T> _eventPool = default;
+
+        private int _eventEntity = -1;
+
+        public void Run (EcsSystems systems)
+        {
+            var entitiesCount = _eventFilter.Value.GetEntitiesCount();
+
+            if (entitiesCount <= 0)
+            {
+                return;
+            }
+
+            var rawEntities = _eventFilter.Value.GetRawEntities();
+
+            for (int i = 0; i < entitiesCount; i++)
+            {
+                _eventEntity = rawEntities[i];
+
+                // your event
+
+                DeleteEvent();
+            }
+        }
+
+        private void DeleteEvent()
+        {
+            _eventPool.Value.Del(_eventEntity);
+
+            _eventEntity = -1;
+        }
+    }
+}
